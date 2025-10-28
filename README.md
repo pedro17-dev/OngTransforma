@@ -22,10 +22,10 @@ O **Transforma+** é um projeto acadêmico que simula o funcionamento de uma ONG
 
 <div style="display: flex; gap: 10px; flex-wrap: wrap; border-radius: 15px;">
 <img src="https://skillicons.dev/icons?i=html" width="80" alt="HTML" />
-   <img src="https://skillicons.dev/icons?i=css" width="80" alt="CSS" />
-  <img src="https://skillicons.dev/icons?i=javascript" width="80" alt="JavaScript" />
-   <img src="https://skillicons.dev/icons?i=git" width="80" alt="Git" />
-    <img src="https://skillicons.dev/icons?i=github" width="80" alt="GitHub" />
+<img src="https://skillicons.dev/icons?i=css" width="80" alt="CSS" />
+<img src="https://skillicons.dev/icons?i=javascript" width="80" alt="JavaScript" />
+<img src="https://skillicons.dev/icons?i=git" width="80" alt="Git" />
+<img src="https://skillicons.dev/icons?i=github" width="80" alt="GitHub" />
 </div>
 
 ---
@@ -34,11 +34,15 @@ O **Transforma+** é um projeto acadêmico que simula o funcionamento de uma ONG
 
 ONG/
 │
-├─ index.html # Página inicial
-├─ css/ # Arquivos de estilo
-├─ js/ # Scripts de interatividade
+├─ atividade1/ # HTML da primeira atividade
+│   ├─ index.html
+│   └─ imagens/
+├─ atividade2/ # HTML + CSS da segunda atividade
+│   ├─ index.html
+│   ├─ style.css
+│   └─ imagens/
+├─ js/ # Scripts de interatividade (atividade 3)
 └─ assets/ # Imagens e recursos multimídia
-
 
 ---
 
@@ -51,18 +55,22 @@ ONG/
 
 ---
 
+## 📝 Atividades do Projeto
+
+- **Atividade 1 (HTML):** Construção da estrutura básica do site, incluindo seções principais e navegação.  
+  Link do commit da atividade 1: [Atividade 1](https://github.com/pedro17-dev/OngTransforma/tree/3f0fcce8d3191a8843f75d5d05f58b60afb0be1b/atividade%201)
+
+- **Atividade 2 (HTML + CSS):** Adição da estilização da página, incluindo cores, fontes, layout e responsividade.  
+  Link do commit da atividade 2: [Atividade 2](https://github.com/pedro17-dev/OngTransforma/tree/767a0aef334f0699c73549d1a8c3e0ae2c1fdabd/atividade%202)
+
+- **Atividade 3 (HTML + CSS + JS):** Inclusão de funcionalidades com JavaScript para interatividade.  
+
+- **Atividade 4 (Versionamento):** Organização dos commits, pull requests e histórico do projeto.
+
+---
+
 ## ⚡ Como Executar  
 
 1. Clone o repositório:  
    ```bash
-   git clone https://github.com/pedro17-dev/ONG.git
-
-🤝 Contato
-
-### 💼 Contato
-  <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
-  <!-- VS Code -->
-  <a href="https://www.linkedin.com/in/pedro-henrique-rodrigues-de-souza-9362681a2/">
-  <img src="https://skillicons.dev/icons?i=linkedin" width="80" alt="linkedin" />
-</a>
-
+   git clone https://github.com/pedro17-dev/OngTransforma.git
