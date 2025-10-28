@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-br">
+<!-- Define a linguagem da página como português do Brasil -->
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define que a página será responsiva -->
+    <title>Doações</title>
+    <!-- Título da página -->
+
+    <!-- Importa ícones do Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Importa o arquivo CSS externo para estilização -->
+    <link rel="stylesheet" href="css/doacao.css">
+        <link rel="stylesheet" href="css/responsividade.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <button class="menu-mobile-btn">
+            <span class="material-icons">menu</span>
+        </button>
+        
+        <a href="index.html">
+          <h2>TRANSFORMA+</h2>
+        </a>
+
+        <ul id="menu-links">
+          <li>
+            <span class="material-icons">home</span
+            ><a href="index.html">Home</a>
+          </li>
+          <li>
+            <span class="material-icons">book</span
+            ><a href="projetos.html">Projetos</a>
+          </li>
+          <li>
+            <span class="material-icons">volunteer_activism</span
+            ><a href="voluntario.html">Seja Voluntário</a>
+          </li>
+          <li>
+            <span class="material-icons">paid</span
+            ><a href="doações.html">Doe Agora</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <!-- Seção de Doações -->
+        <section id="doacoes">
+            <!-- Formulário para o usuário preencher seus dados e escolher o valor da doação -->
+            <form id="formulario">
+                <h2>Formas de Pagamento</h2>
+
+                <!-- Campo para nome completo do doador -->
+                <label for="nome-doacao">Nome Completo</label>
+                <input type="text" id="nome-doacao" name="nome" required>
+
+                <!-- Campo para e-mail do doador -->
+                <label for="email-doacao">Email</label>
+                <input type="text" id="email-doacao" name="email" required>
+
+                <!-- Campo para digitar valor da doação -->
+                <label for="valor-doacao">Digite o valor da doação:</label>
+                <input type="text" id="valor-doacao" name="valor" placeholder="0,00">
+
+                <!-- Botões rápidos para valores pré-definidos -->
+                <div class="botoes-valores">
+                    <button type="button" class="btn-valor" data-valor="5">R$ 5</button>
+                    <button type="button" class="btn-valor" data-valor="20">R$ 20</button>
+                    <button type="button" class="btn-valor" data-valor="50">R$ 50</button>
+                    <button type="button" class="btn-valor" data-valor="100">R$ 100</button>
+                </div>
+                <div>
+                  <button class="doacao">Fazer doação</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <!-- Direitos autorais -->
+        <p>© 2025 ONG Transforma+. Todos os direitos reservados.</p>
+         <!-- Seção de Contato -->
+      <section id="contato">
+        <h2>Contato</h2>
+        <!-- Informações de contato -->
+        <p>Email: contato@transforma.org.br</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript que contém a lógica do formulário -->
+    <script src="js/doacoes.js"></script>
+</body>
+</html>
