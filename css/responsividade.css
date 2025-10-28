@@ -1,0 +1,275 @@
+/* ================================================= */
+/* CONFIGURAÇÕES GERAIS (Garante que o botão de menu esteja escondido no desktop) */
+/* ================================================= */
+.menu-mobile-btn {
+    display: none; 
+}
+
+
+/* ================================================= */
+/* REGRAS DE RESPONSIVIDADE PARA CELULARES (max-width: 600px) */
+/* Todas as regras para mobile devem estar DENTRO deste bloco */
+/* ================================================= */
+
+@media (max-width: 600px) {
+    
+    /* 0. CORREÇÃO DE POSICIONAMENTO PARA VOLTAR AO FLUXO NORMAL (Index) */
+    
+    #banner {
+        position: static !important; 
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    #banner h1,
+    #banner .botoes {
+        position: static !important; 
+        top: auto !important;
+        left: auto !important;
+        transform: none !important; 
+    }
+    
+    /* 1. AJUSTE DE TIPOGRAFIA PRINCIPAL (H1 do Banner) */
+    #banner h1 {
+        font-size: 1.8rem; 
+        line-height: 1.3;
+        padding: 15px 15px 0 15px;
+        text-align: center;
+        color: #002a9e;
+        font-weight: 750;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0, 13);
+    }
+
+    /* --- 2. MENU HAMBÚRGUER --- */
+    
+    .menu-mobile-btn {
+        display: block; 
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        z-index: 1000;
+        background: none;
+        border: none;
+        color: #000; 
+        cursor: pointer;
+        padding: 5px;
+    }
+    
+    #menu-links {
+        display: none; 
+        position: absolute;
+        top: 50px; 
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column; 
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #menu-links.active {
+        display: flex; 
+    }
+
+    #menu-links li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block; 
+        margin: 0;
+    }
+    
+    #menu-links li a,
+    #menu-links li .material-icons {
+        color: #ffffff; 
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    
+    /* --- 3. CORREÇÃO DOS BOTÕES DE AÇÃO (Index) --- */
+    
+    .botoes {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        padding: 20px; 
+        box-sizing: border-box; 
+        
+    }
+
+    .botoes a {
+        width: 100%; 
+        
+    }
+    
+    .botoes button {
+        width: 100%; 
+        padding: 15px 0; 
+        font-size: 1rem; 
+    }
+
+    /*sobre nos*/
+
+    #sobre-nos p{
+        text-align: left;
+        
+    }
+    /* --- 4. CORREÇÃO DOS BOTÕES DE VALORES (Doe Agora) --- */
+    
+    .botoes-valores {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        width: 100%; 
+        margin: 10px 0;
+        padding: 0 10px; 
+    }
+    
+    .botoes-valores button {
+        font-size: 1rem; 
+        padding: 12px 15px; 
+        margin: 5px; 
+    }
+    
+    /* --- 5. OTIMIZAÇÕES GERAIS E CENTRALIZAÇÃO DE IMAGENS --- */
+    
+    #banner img,
+    #sobre-nos img,
+    .ações img,
+    #publico img {
+        max-width: 100%; 
+        height: auto;
+        display: block; 
+        margin: 20px auto; 
+    }
+    
+    /* --- 5.1 RESTAURAÇÃO DO "QUEM SOMOS" --- */
+    #sobre-nos {
+        background-color: #f4f4f4; /* cor de fundo suave */
+        padding: 40px 20px; /* espaçamento interno */
+        border-radius: 12px;
+    }
+
+    #sobre-nos .sobre-nos-container {
+        padding: 20px; /* espaçamento interno restaurado */
+        box-sizing: border-box;
+    }
+    
+    /* --- 6. AJUSTE DOS CARDS --- */
+
+    /* Missão */
+    .card-quemSomos {
+        background-color: #0c4a6e;
+        color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        width: 90%;
+        margin: 15px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-quemSomos p  {
+        text-align: left;    }
+
+    /* Visão */
+    .card-visao {
+        background-color: #0c4a6e;
+        color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        width: 90%;
+        margin: 15px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-visao p{
+        text-align: left;
+    }
+
+    /* Valores */
+    .card-valores {
+        background-color: #0c4a6e;
+        color: white;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .card-valores ul {
+        padding: 0;
+        margin: 7px 0 0 0;
+        font-size: 16px;
+    }
+
+    .card-valores li {
+        margin: 2px 0 0 8px;
+        text-align: left;
+    }
+
+
+    .card-valores h3{
+        color: #fff;
+    }
+
+     .card-visao h3{
+        color: #fff;
+     }
+
+      .card-quemSomos h3{
+        color: #fff;
+      }
+
+      /*nosso publico*/
+        #publico .publico-container p{
+            text-align: left;
+        }
+
+        /*impacto*/
+        .impacto p{
+            text-align: left;
+        }
+
+        footer #contato{
+            padding: 10px;
+        }
+
+        /*projetos*/
+
+        .curso p{
+            text-align: left;
+        }
+
+        .oficinas p{
+            text-align: left;
+        }
+
+        .mentoria p{
+            text-align: left;
+        }
+
+        /*Voluntarios*/
+
+        button{
+            font-size: 18px;
+        }
+} /* FIM do @media (max-width: 600px) */
